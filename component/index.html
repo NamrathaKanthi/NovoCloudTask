@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='ComponentApp'>
+<head>
+	<title>Component</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='js/angular-animate.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-aria.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-messages.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-material.1.1.0.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/angular-material.1.1.0.min.css">
+    <script type="text/javascript" src='js/component.js'></script>
+
+</head>
+<body>
+	<div ng-controller = 'myCtrl as ctrl'>
+		<custom-component data = ctrl.dataName></custom-component>
+	</div>
+	<div ng-controller = 'myCtrl1 as ctrl1'>
+		<custom-component1 name = ctrl1.name></custom-component1>
+	</div>
+</body>
+</html>

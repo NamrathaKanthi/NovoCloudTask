@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default" ng-controller="myCtrl as firstCtrl">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">{{firstCtrl.dataName}}</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li ng-repeat="menu in firstCtrl.menuBar">
+					<a href="{{menu.component}}">{{menu.name}}
+			            <span class="sr-only">(current)</span>
+			      	</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

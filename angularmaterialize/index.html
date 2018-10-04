@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app='AngularApp'>
+
+<head>
+    <title>Angular materialize</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='js/angular-animate.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-aria.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-messages.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-material.1.1.0.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/angular-material.1.1.0.min.css">
+    <script type="text/javascript" src='js/angularmaterializebackend.js'></script>
+</head>
+
+<body>
+    <div layout="row">
+        <div flex-sm="20" flex="20" flex-xs="20" style="background-color: red;">
+            [flex="20"]
+        </div>
+        <div flex-sm="70" flex="70" flex-xs="70" style="background-color: blue;">
+            [flex="70"]
+        </div>
+        <div flex-sm="10" flex="10" flex-xs="10" style="background-color: green;">
+            <p>hello</p>
+        </div>
+    </div>
+    <div layout="row">
+        <div flex-offset-sm="15" flex="33" flex-xs="15" style="background-color: pink">
+            <p>Heloo</p>
+        </div>
+        <div flex-sm="66" flex-xs-offset="10" flex="66" flex-xs="66" style="background-color: orange">
+            <p>Hi</p>
+        </div>
+    </div>
+    <md-nav-bar md-selected-nav-item="currentNavItem">
+        <md-nav-item md-nav-sref="#" name="page1">Page One</md-nav-item>
+        <md-nav-item md-nav-sref="#" name="page2">Page Two</md-nav-item>
+        <md-nav-item md-nav-href="#" name="page3">Page Three</md-nav-item>
+    </md-nav-bar>
+    <div layout="row" ng-controller="AngularCtrl">
+        <md-sidenav md-component-id="left" class="md-sidenav-left">
+            <h1>SideBar</h1>
+            <md-button class="md-accent md-raised">Raised and Accent Button</md-button>
+            <md-button class="md-no-focus">No Focus Style</md-button>
+            <md-button>
+                <md-icon md-jpg-src="images/1.jpg"></md-icon>
+                Register Now
+            </md-button>
+        </md-sidenav>
+        <md-content>
+            Center Content
+            <md-button ng-click="openLeftMenu()">
+                Open Left Menu
+            </md-button>
+        </md-content>
+        <md-dialog aria-label="List dialog">
+            <md-dialog-content>
+                <md-list>
+                    <md-list-item ng-repeat="item in items">
+                        <p>Number {{item}}</p>
+                    </md-list-item>
+                </md-list>
+            </md-dialog-content>
+            <md-dialog-actions>
+                <md-button ng-click="closeDialog()" class="md-primary">Close Dialog</md-button>
+            </md-dialog-actions>
+        </md-dialog>
+        <md-content layout-padding>
+            Lorem ipsum dolor sit amet, ne quod novum mei.
+        </md-content>
+    </div>
+</body>
+
+</html>
