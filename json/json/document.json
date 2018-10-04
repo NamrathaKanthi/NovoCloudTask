@@ -1,0 +1,28 @@
+{  "response": {
+    "result": [
+      "2016-06-07:::2::",
+      "2016-06-08:::11::",
+      "2016-06-09:::14::",
+      "2016-06-10:::9::",
+      "2016-06-11:::4::",
+      "2016-06-13:::3::",
+      "2016-06-14:::2::",
+      "2016-06-15:::3::",
+      "2016-06-16:::4::"
+    ],
+    "DBSourceName": "presto",
+    "numRows": 9,
+    "columns": [
+      "Date",
+      "Total"
+    ],
+    "DBName": "presto",
+    "datatypes": [
+      "VARCHAR",
+      "BIGINT"
+    ]
+  },
+  "query_url_output": "http:\/\/10.1.40.116:8181\/iscope-metadata\/adhocquery\/result_1485168589674.csv",
+  "message": "Successfully inserted to ad hoc query transaction submitted by [pravash].",
+  "status": "SUCCESS"
+}

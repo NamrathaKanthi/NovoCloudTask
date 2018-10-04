@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app='DateApp'>
+
+<head>
+    <title>Date Picker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/angular-animate.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-aria.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-messages.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-material.1.1.0.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/angular-material.1.1.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script type="text/javascript" src='js/date.js'></script>
+</head>
+
+<body ng-controller='DateCtrl'>
+    <div class="datepickerdemoBasicUsage">
+        <md-content layout-padding="">
+            <div layout-gt-xs="row">
+                <div flex-gt-xs="">
+                    <h4>Standard date-picker</h4>
+                    <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
+                </div>
+            </div>
+        </md-content>
+    </div>
+    <div layout="row" style="background-color: red;">
+        <div flex="20" style="background-color: yellow;">
+            [flex="20"]
+        </div>
+        <div flex="70" style="background-color: pink;">
+            [flex="70"]
+        </div>
+        <div flex hide-sm hide-xs style="background-color: blue;">
+            [flex]
+        </div>
+    </div>
+    <div layout="row" layout-wrap>
+        <div flex="30">
+            [flex="30"]
+        </div>
+        <div flex="45">
+            [flex="45"]
+        </div>
+        <div flex="25">
+            [flex="25"]
+        </div>
+        <div flex="33">
+            [flex="33"]
+        </div>
+        <div flex="66">
+            [flex="66"]
+        </div>
+        <div flex="50">
+            [flex="50"]
+        </div>
+        <div flex>
+            [flex]
+        </div>
+    </div>
+</body>
+
+</html>

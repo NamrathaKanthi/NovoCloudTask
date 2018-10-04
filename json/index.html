@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app='jsonApp'>
+<head>
+	<title>Json Parsing</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='js/angular-animate.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-aria.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-messages.1.5.5.min.js'></script>
+    <script type="text/javascript" src='js/angular-material.1.1.0.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/angular-material.1.1.0.min.css">
+    <script type="text/javascript" src='js/jsonbackend.js'></script>
+    <script type="text/javascript" src='js/jsonservice.js'></script>
+</head>
+<body data-ng-controller = 'jsonCtrl as JSC'>
+		<table style="border: 1px solid black;">
+			<thead style="border: 1px solid black;">
+				<tr>
+					<th>
+						Date
+					</th>
+					<th>
+						Total
+					</th>
+				</tr>
+			</thead>
+			<tbody style="border: 1px solid black;">
+				<tr data-ng-repeat = 'x in JSC.arrayDetails'>
+					<td>
+						{{x.date}}
+					</td>
+					<td>
+						{{x.total}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+</body>
+</html>
